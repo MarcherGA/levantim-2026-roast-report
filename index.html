@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>רלוונטיים 2026 — דו״ח נזק חברתי</title>
+<style>
+:root{--bg:#0b0a08;--paper:#f4ead2;--ink:#14110c;--muted:#776b5b;--red:#e23b2e;--yellow:#ffc857;--green:#7bd88f;--blue:#7aa7ff;--card:#fff6df;--line:#2a2118;--shadow:0 22px 80px rgba(0,0,0,.38)}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at top right,#2b130f 0,#0b0a08 34%,#050403 100%);color:var(--paper);font-family:Arial,'Noto Sans Hebrew','Rubik',system-ui,sans-serif;line-height:1.55} a{color:inherit} .wrap{width:min(1180px,calc(100% - 32px));margin:auto} 
+.hero{min-height:96vh;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid rgba(244,234,210,.2)} .hero:before{content:"";position:absolute;inset:-20%;background:repeating-linear-gradient(-8deg,rgba(255,200,87,.06) 0 2px,transparent 2px 22px);animation:drift 22s linear infinite} @keyframes drift{to{transform:translateX(120px)}}
+.kicker{display:inline-flex;gap:10px;align-items:center;border:1px solid rgba(244,234,210,.35);border-radius:999px;padding:8px 14px;color:var(--yellow);background:rgba(0,0,0,.22);backdrop-filter:blur(8px)} h1{font-size:clamp(44px,8vw,116px);line-height:.92;margin:24px 0 18px;letter-spacing:-.06em;text-wrap:balance} .hero p.lead{font-size:clamp(20px,3vw,34px);max-width:900px;color:#f8dfad;margin:0 0 30px} .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;position:relative;z-index:1} .dossier{background:var(--paper);color:var(--ink);padding:24px;border:3px solid #000;box-shadow:10px 10px 0 var(--red);transform:rotate(-1.2deg)} .dossier h2{margin:0 0 12px;font-size:30px} .dossier .big{font-size:58px;font-weight:900;letter-spacing:-.05em;color:var(--red)} .dossier small{display:block;color:var(--muted)} .cta{display:flex;gap:12px;flex-wrap:wrap} .btn{border:2px solid var(--paper);padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800} .btn.primary{background:var(--yellow);color:#150f08;border-color:#000}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,10,8,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(244,234,210,.18)} nav .wrap{display:flex;gap:10px;overflow:auto;padding:10px 0} nav a{white-space:nowrap;text-decoration:none;padding:8px 12px;border:1px solid rgba(244,234,210,.2);border-radius:999px;color:#f4ead2;font-size:14px}
+section{padding:72px 0} .section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px} h2{font-size:clamp(34px,5vw,64px);line-height:1;margin:0;letter-spacing:-.04em} .note{color:#d8c7a1;max-width:620px} .panel{background:var(--paper);color:var(--ink);border:3px solid #000;box-shadow:var(--shadow);padding:28px;border-radius:2px} .diagnosis{display:grid;grid-template-columns:1fr 1fr;gap:22px} .diagnosis .panel:nth-child(2){background:#111;color:var(--paper);border-color:var(--paper)} .pull{font-size:clamp(25px,3.5vw,48px);font-weight:900;line-height:1.08;color:var(--yellow);margin:0}
+.bars{display:grid;gap:10px} .bar{display:grid;grid-template-columns:150px 1fr 90px;gap:12px;align-items:center;color:var(--paper)} .bar div{height:16px;background:rgba(244,234,210,.12);border:1px solid rgba(244,234,210,.25);overflow:hidden} .bar i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--red),var(--yellow))} .bar b{direction:ltr;text-align:left;color:var(--yellow)}
+.awards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px} .award{background:#15110d;border:1px solid rgba(244,234,210,.22);padding:18px;min-height:210px;position:relative;overflow:hidden} .award span{font-size:34px} .award h3{font-size:22px;margin:10px 0;color:var(--yellow)} .award b{color:var(--green)} .award p{color:#dfd0b3}
+.member{background:var(--card);color:var(--ink);border:3px solid #000;margin:0 0 26px;padding:26px;box-shadow:8px 8px 0 rgba(226,59,46,.9)} .member:nth-child(even){box-shadow:8px 8px 0 rgba(255,200,87,.9)} .member-head{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;border-bottom:2px solid #000;padding-bottom:14px;margin-bottom:18px} .stamp{width:64px;height:64px;display:grid;place-items:center;border:3px solid #000;border-radius:50%;background:var(--yellow);font-size:32px} .eyebrow{margin:0;color:var(--red);font-weight:900;letter-spacing:.06em} h3{font-size:clamp(26px,3vw,42px);line-height:1.05;margin:4px 0} .stat{text-align:center;background:#111;color:var(--paper);padding:10px 14px;border:2px solid #000;min-width:120px} .stat strong{display:block;font-size:24px;direction:ltr} .stat span{font-size:12px;color:#d8c7a1} .role{font-size:20px} .crime{background:#fff;border-right:8px solid var(--red);padding:12px 14px} .compliment{background:#111;color:var(--paper);padding:12px 14px} .member-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0} h4{font-size:18px;margin:0 0 10px;color:var(--red)} .topics{list-style:none;margin:0;padding:0;display:grid;gap:7px} .topics li{display:flex;justify-content:space-between;border-bottom:1px dashed #c9b98f;padding-bottom:5px} .topics em{direction:ltr;font-style:normal;color:var(--muted)} .chips{display:flex;gap:8px;flex-wrap:wrap} .chips span{background:#111;color:var(--paper);padding:7px 10px;border-radius:999px;font-size:14px} .chips small{color:var(--yellow)} blockquote{margin:12px 0 0;padding:12px 14px;background:#fff;border-right:6px solid #111;font-weight:700} blockquote span{display:block;color:var(--muted);font-size:12px;margin-bottom:4px;direction:ltr;text-align:right}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px} .year{border:1px solid rgba(244,234,210,.22);padding:18px;background:rgba(244,234,210,.06)} .year b{font-size:28px;color:var(--yellow)} .year p{margin:.4em 0 0;color:#dfd0b3}
+.footer{padding:50px 0 90px;color:#cbb98e;border-top:1px solid rgba(244,234,210,.15)}
+@media(max-width:900px){.hero-grid,.diagnosis,.member-grid{grid-template-columns:1fr}.awards{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr 1fr}.member-head{grid-template-columns:auto 1fr}.stat{grid-column:1/-1}.bar{grid-template-columns:90px 1fr 72px}}
+@media(max-width:560px){.awards,.timeline{grid-template-columns:1fr}.panel,.member{padding:18px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap hero-grid"><div><span class="kicker">🇮🇱⚔️ רלוונטיים 2026 · דו״ח נזק חברתי</span><h1>קראתי 218,675 הודעות ואתם צריכים מבוגר אחראי.</h1><p class="lead">זה לא צ׳אט. זה חדר מלחמה לתיאום יציאות, קללות כחיבה, סקרים מטומטמים, ו־14 אנשים שמנסים להבין מי בא — מאז 2018.</p><div class="cta"><a class="btn primary" href="#members">קח אותי לחשודים</a><a class="btn" href="#awards">תן פרסים למופרעים</a></div></div><aside class="dossier"><h2>תיק ראיות</h2><div class="big">218,675</div><small>הודעות משתמשים · 30/08/2018—08/07/2026</small><hr><p><b>שיאן:</b> דורון עם 44,856 הודעות. זה לא “פעיל”, זה מונופול.</p><p><b>אבחנה:</b> מערכת לוגיסטית כושלת שמתחפשת לחברות.</p></aside></div></header>
+<nav><div class="wrap"><a href="#diagnosis">אבחון</a><a href="#stats">מספרים</a><a href="#awards">פרסים</a><a href="#דורון">דורון</a><a href="#אופרי הזיין">אופרי הזיין</a><a href="#דן האדיש">דן האדיש</a><a href="#שחר הגבר">שחר הגבר</a><a href="#כזום">כזום</a><a href="#ניצן העליז">ניצן העליז</a><a href="#בוזי נוב">בוזי נוב</a><a href="#Itay Levy">Itay Levy</a><a href="#ברשץ">ברשץ</a><a href="#אורן האח">אורן האח</a><a href="#בכורי">בכורי</a><a href="#פרנסיסקו">פרנסיסקו</a><a href="#אדיר פרושונסקי">אדיר פרושונסקי</a><a href="#מאור אחשלי">מאור אחשלי</a></div></nav>
+<main>
+<section id="diagnosis"><div class="wrap diagnosis"><div class="panel"><h2>האבחון הקבוצתי</h2><p class="pull">אתם לא מדברים. אתם מנסים לתאם, נכשלים, מקללים, ואז קוראים לזה חברות.</p><p>הצ׳אט הזה בנוי משלושה חומרים: “מי בא”, “בן זונה”, ותחושת חירום לא מוצדקת סביב כל ערב שישי. כל ניסיון להיפגש הופך לתרגיל פיקודי: רשימות שמות, סימני שאלה, תיוגים, פול, ואז מישהו בכל זאת לא יודע מתי יוצאים.</p></div><div class="panel"><h2>מה הקבוצה באמת עושה?</h2><p>זאת לא קבוצת חברים. זאת חברה בע״מ לתיאום לא יעיל, עם מחלקת סקרים, אגף קללות, מוקד גיימינג, וקבינט מלחמה שמופעל בכל פעם שמישהו כותב “מתי”.</p><p>הקסם הוא שזה עובד. גרוע, מכוער, עם הרבה “יא זין” — אבל עובד. כי מתחת לכל הרעש יש חברות אמיתית, פשוט כזאת שמתביישת להגיד “אני אוהב אותך” בלי לעטוף את זה בקללה.</p></div></div></section>
+<section id="stats"><div class="wrap"><div class="section-title"><h2>לוח תוצאות החפירות</h2><p class="note">המספרים לא משקרים. הם רק מסתכלים עליכם ומתבאסים.</p></div><div class="bars"><div class="bar"><span>דורון</span><div><i style="--w:100.0%"></i></div><b>44,856</b></div><div class="bar"><span>אופרי הזיין</span><div><i style="--w:69.5%"></i></div><b>31,164</b></div><div class="bar"><span>דן האדיש</span><div><i style="--w:49.7%"></i></div><b>22,288</b></div><div class="bar"><span>שחר הגבר</span><div><i style="--w:45.7%"></i></div><b>20,484</b></div><div class="bar"><span>כזום</span><div><i style="--w:45.6%"></i></div><b>20,469</b></div><div class="bar"><span>ניצן העליז</span><div><i style="--w:42.4%"></i></div><b>19,021</b></div><div class="bar"><span>בוזי נוב</span><div><i style="--w:38.4%"></i></div><b>17,234</b></div><div class="bar"><span>Itay Levy</span><div><i style="--w:25.3%"></i></div><b>11,350</b></div><div class="bar"><span>ברשץ</span><div><i style="--w:20.7%"></i></div><b>9,307</b></div><div class="bar"><span>אורן האח</span><div><i style="--w:19.3%"></i></div><b>8,662</b></div><div class="bar"><span>בכורי</span><div><i style="--w:13.2%"></i></div><b>5,933</b></div><div class="bar"><span>פרנסיסקו</span><div><i style="--w:10.4%"></i></div><b>4,683</b></div></div></div></section>
+<section><div class="wrap"><div class="section-title"><h2>מילון מחלות</h2><p class="note">ביטויים שחוזרים מספיק פעמים כדי להיחשב תשתית לאומית.</p></div><div class="awards"><div class="award"><span>🤬</span><h3>בן זונה</h3><b>506+ מופעים</b><p>לא קללה, פסיק. לפעמים גם נקודה, חיבוק, או “ראיתי את ההודעה”.</p></div><div class="award"><span>⏱️</span><h3>חצי שעה / רבע שעה</h3><b>זמן דמיוני</b><p>יחידות זמן שלא עברו ביקורת עמיתים. בישראלית: בין 12 דקות למוות תרמי של היקום.</p></div><div class="award"><span>📍</span><h3>מי בא / מי בבית</h3><b>דת התיאום</b><p>הקבוצה מנסה לענות על אותה שאלה כבר שמונה שנים. עדיין אין תשובה.</p></div><div class="award"><span>😂</span><h3>חחחחח</h3><b>מנגנון הישרדות</b><p>הפתרון הרשמי לכל מבוכה, כשל לוגיסטי או חשד לפשע חברתי.</p></div></div></div></section>
+<section id="awards"><div class="wrap"><div class="section-title"><h2>פרסים רשמיים</h2><p class="note">לא ביקשתם, אבל גם לא ביקשתם 218 אלף הודעות.</p></div><div class="awards"><div class="award"><span>👑</span><h3>מלך החפירות</h3><b>דורון</b><p>44,856 הודעות. זה לא ניצחון, זה השתלטות עוינת על שרתי מטא.</p></div><div class="award"><span>📋</span><h3>שר הלוגיסטיקה הכושלת</h3><b>דורון + כל מי שענה “אולי”</b><p>כל יציאה נראית כמו מבצע עם רשימת שמות, סימני שאלה, ופול שמסתיים בזה שאף אחד לא יודע איפה נפגשים.</p></div><div class="award"><span>🗳️</span><h3>וועדת הבחירות המרכזית</h3><b>ניצן</b><p>הפך כל בדיחה, היעדרות וחרדה חברתית לסקר עם אופציות שאסור להראות להורים.</p></div><div class="award"><span>🧻</span><h3>שקיפות יתר</h3><b>שחר</b><p>נתן לחברים ETA כולל שלב הניגובים. אין פרטיות, יש SLA.</p></div><div class="award"><span>🪓</span><h3>קללה כספרות גבוהה</h3><b>כזום</b><p>היחיד שיכול להפוך “איפה אתה” לשרשרת קללות עם מבנה, משקל ודימויים.</p></div><div class="award"><span>👻</span><h3>פרס הנוכחות דרך היעדרות</h3><b>מאור</b><p>כשיש לך 668 הודעות ועדיין עושים עליך פול נעדרים — ניצחת את המשחק בלי להתחבר.</p></div><div class="award"><span>🎮</span><h3>משרד הגיימינג והביטול החברתי</h3><b>אופרי / אורן</b><p>כי תמיד יש סיכוי שכל תיאום אנושי ימות לטובת “מתי קונטר”.</p></div><div class="award"><span>🧯</span><h3>הכי “לא מהחופרים” אבל כן</h3><b>Itay</b><p>11,350 הודעות זה מספיק כדי לא לקבל חסינות, אחי.</p></div></div></div></section>
+<section id="members"><div class="wrap"><div class="section-title"><h2>החשודים המרכזיים</h2><p class="note">כל פרופיל משלב ניתוח וירידה. אין פה “שכבת roast”. הניתוח עצמו בא להרביץ.</p></div>
+    <article class="member" id="דורון">
+      <div class="member-head">
+        <div class="stamp">🐉</div>
+        <div><p class="eyebrow">פרופיל חשוד #1</p><h3>דורון — שר הפנים, דובר צה״ל, ומערכת ההפעלה של הצ׳אט</h3></div>
+        <div class="stat"><strong>44,856</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> המארגן הראשי והבן אדם היחיד שכנראה פתח את הקבוצה גם באקסל.</p>
+      <p>דורון לא “פעיל בקבוצה”. דורון הוא התשתית. אם וואטסאפ נופל, דורון כנראה שולח עדכון בקבוצה חלופית שהוא הקים ב־2019 “ליתר ביטחון”. 44,856 הודעות זה כבר לא חברות — זה שירות ציבורי בלי תקן ובלי שעות קבלה.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להפוך כל יציאה פשוטה למבצע עם רשימות, תיוגים, פול, גיבוי, ומעקב ביצוע כאילו מדובר בחילוץ בני ערובה.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> הבעיה היא שבלעדיו החבורה הזאת הייתה נפגשת פעם בשנתיים בטעות, וגם אז מישהו היה מגיע לבית הלא נכון.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>4755</em></li><li><b>תיאומים/מי בא</b><em>980</em></li><li><b>אהבה מוגזמת</b><em>406</em></li><li><b>גיימינג/מחשב</b><em>381</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>may take <small>169</small></span><span>take while <small>169</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2023-06-05</span>שגם זה היה אחרי 45 דקות שהבן זונה לא הבין למה הוא לא יכול לשחק קומפ בגלל אנטי ציט</blockquote><blockquote><span>2026-02-24</span>הבן זונה מדבר איתי ללכת להיות יועץ כספים של הקרטלים במקסיקו ולא שהוא מתחתן</blockquote><blockquote><span>2026-04-12</span>פעם היה לך שלשול מתפרץ ברמה של פלוץ מקדים שמשפריץ לכל הצדדים ואז מפל של חרא מטורף בשעה 08:30 בבוקר ברכבת לנהריה בלי נייר?</blockquote>
+    </article>
+
+    <article class="member" id="אופרי הזיין">
+      <div class="member-head">
+        <div class="stamp">📡</div>
+        <div><p class="eyebrow">פרופיל חשוד #2</p><h3>אופרי הזיין — תחנת רדיו פרטית עם קללות כחיבה</h3></div>
+        <div class="stat"><strong>31,164</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> מנוע רעש. האיש שמחזיק את הצ׳אט חם גם כשאין נושא, אין מטרה ואין סיבה חוקית להמשיך לדבר.</p>
+      <p>אופרי כותב כמו בן אדם שהמקלדת חייבת לו כסף. כל הודעה שנייה היא או “בן זונה”, או קריאה למישהו להיכנס למחשב, או אנרגיה של אחד שלא מוכן שהשקט ינצח. 31 אלף הודעות, ועדיין איכשהו התחושה היא שהוא רק התחיל להתחמם.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להפוך חיבה, לחץ חברתי וחוסר סבלנות לאותו משפט בדיוק.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> מצד שני, הוא אחד הדבקים החברתיים של הקבוצה — פשוט דבק מגע עם אזהרת רעילות.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>2894</em></li><li><b>תיאומים/מי בא</b><em>743</em></li><li><b>קללות כחיבה</b><em>508</em></li><li><b>אהבה מוגזמת</b><em>277</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>בן זונה <small>166</small></span><span>יא בן <small>139</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2021-04-06</span>טוב קמתי נדיב יש לי פד לעכבר בן זונה</blockquote><blockquote><span>2021-09-03</span>מתי אתה יוצא לשחר יא בן זונה</blockquote><blockquote><span>2023-02-03</span>למה אף אחד לא במחשב הבן זונה</blockquote>
+    </article>
+
+    <article class="member" id="דן האדיש">
+      <div class="member-head">
+        <div class="stamp">💀</div>
+        <div><p class="eyebrow">פרופיל חשוד #3</p><h3>דן האדיש — האדיש הכי לא אדיש במזרח התיכון</h3></div>
+        <div class="stat"><strong>22,288</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> קורבן אהוב, מפעיל סקרים, מוקד בדיחות, ואיש שהכינוי שלו הוא הונאת צרכן.</p>
+      <p>דן “האדיש” עם 22,288 הודעות זה כמו לקרוא למסעדה “דיאטה”. האיש נמצא בכל מקום, מתויג בכל דבר, איכשהו תמיד חלק מהבדיחה, ולפי כמות הפעמים שמזכירים אותו — גם כשהוא לא כותב הוא עדיין עושה רעש.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להיות נוכח מספיק בשביל להפוך למיתולוגיה, אבל עם מיתוג של אחד שלא אכפת לו.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> הוא עמוד תווך כי כולם מרגישים בנוח לרדת עליו, וזה סימן מסוכן אבל אמיתי לאהבה.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>2515</em></li><li><b>תיאומים/מי בא</b><em>488</em></li><li><b>קללות כחיבה</b><em>397</em></li><li><b>אהבה מוגזמת</b><em>362</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>may take <small>97</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2026-04-01</span>ניצן נודר אני מפחד עליך יבן זונה</blockquote><blockquote><span>2025-08-23</span>POLL: / מאור נעדר כבר שעה מתי להתחיל לחפש אותו / OPTION: עכשיו (0 votes) / OPTION: עוד שעה (0 votes) / OPTION: בבוקר (3 votes) / OPTION: להניע קינג הוא יגיע (0 votes)</blockquote><blockquote><span>2023-01-19</span>POLL: / בר מצווה אחיין של דאג / OPTION: מגיע (7 votes) / OPTION: לא מגיע (0 votes) / OPTION: לא יודע עדיין אני בן של זונה (3 votes)</blockquote>
+    </article>
+
+    <article class="member" id="שחר הגבר">
+      <div class="member-head">
+        <div class="stamp">🧻</div>
+        <div><p class="eyebrow">פרופיל חשוד #4</p><h3>שחר הגבר — הגבר, הלוגיסטיקאי, והאיש שנתן ETA לשלב הניגובים</h3></div>
+        <div class="stat"><strong>20,484</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> מבוגר אחראי לכאורה, עם נטייה לספק עדכונים אינטימיים מדי על תהליכים שאף אדם ביקש לדעת.</p>
+      <p>שחר הוא בן אדם שאומר “אני אוהב כנות וישירות” ואז מפרט באיזה שלב הוא בחרבון. זאת לא כנות, זה דיווח מצב מאסון תברואתי. ועדיין, איכשהו, מתוך כל הטינופת — הוא באמת אחד האנשים שמנסים לסגור דברים.</p>
+      <p class="crime"><b>הפשע החוזר:</b> לתת שקיפות מלאה איפה שהיה צריך להיות מסך עשן.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> הוא כנראה באמת גבר, פשוט גבר שצריך עורך לפני שליחה.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>3300</em></li><li><b>תיאומים/מי בא</b><em>728</em></li><li><b>גיימינג/מחשב</b><em>403</em></li><li><b>קללות כחיבה</b><em>275</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>may take <small>111</small></span><span>take while <small>111</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2024-08-24</span>אני אוהב כנות וישירות עם חברים שלי. / אני סיימתי לחרבן אני בשלב הניגובים, לאחר מכן אני מתקלח, 15 דקות משוער, ואז אני אשכב עירום על המיטה עוד 10 דק!</blockquote><blockquote><span>2022-10-20</span>כמו זומבי הבן זונה איך הוא לא מת</blockquote><blockquote><span>2021-01-28</span>אוחח איך הוא יודע לעקוץ בול בזמן הבן זונה הזה</blockquote>
+    </article>
+
+    <article class="member" id="כזום">
+      <div class="member-head">
+        <div class="stamp">🪓</div>
+        <div><p class="eyebrow">פרופיל חשוד #5</p><h3>כזום — משורר הקללות הלאומי</h3></div>
+        <div class="stat"><strong>20,469</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> ספק קללות פרימיום, תוקף מילולי, ואדם שמסוגל להפוך “למה אתה לא בבית” לפשע מלחמה תחבירי.</p>
+      <p>כזום לא מקלל — הוא מלחין. “יבן שרמוטה יבן זונה ימחבל יזבל עופות יכלב כנפיים...” זה לא הודעה, זה אלבום קונספט. 20 אלף הודעות של אנרגיה שמתחילה בוואטסאפ ונגמרת בוועדת חקירה.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להוכיח שקללה יכולה להיות גם פיסול סביבתי.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> אי אפשר לזייף את זה. יש פה כישרון לשפה, פשוט הכישרון ברח מהאקדמיה ללשון והתחיל לריב בחניה.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>2611</em></li><li><b>תיאומים/מי בא</b><em>499</em></li><li><b>קללות כחיבה</b><em>455</em></li><li><b>גיימינג/מחשב</b><em>169</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>יבן זונה <small>79</small></span><span>https www <small>67</small></span><span>בן זונה <small>63</small></span><span>https vm <small>58</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2021-07-02</span>בן זונה מבהלצ קמתי ב2</blockquote><blockquote><span>2020-12-29</span>איך אתה לא בבית אבל יבן שרמוטה יבן זונה ימחבל יזבל עופות יכלב כנפיים ינוגס בכריות בחושך ימסתערב יעוף מוזר</blockquote><blockquote><span>2021-06-12</span>אתה אבנר השכן הבן זונה שכל היום מאונן בחצר???</blockquote>
+    </article>
+
+    <article class="member" id="ניצן העליז">
+      <div class="member-head">
+        <div class="stamp">🗳️</div>
+        <div><p class="eyebrow">פרופיל חשוד #6</p><h3>ניצן העליז — מלך הסקרים והדוקטור לפסיכוזת קבוצות</h3></div>
+        <div class="stat"><strong>19,021</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> מייצר לור. האיש שמסתכל על כאוס ואומר: רגע, בואו נהפוך את זה לפול עם ארבע אפשרויות מעליבות.</p>
+      <p>ניצן הוא לא משתתף בצ׳אט, הוא ועדת תוכן. כל אירוע אצלו נהיה סקר, כל בן אדם נהיה דמות, וכל דמות מקבלת אופציה כמו “בבית שטיח אחושרמוטה”. זה לא הומור — זה מחקר אנתרופולוגי שנכשל באתיקה.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להפוך חברים לאפשרויות הצבעה פוגעניות ואז לקרוא לזה דמוקרטיה.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> הוא חד. יותר מדי חד. חד ברמה שצריך כיסוי פלסטיק בקצוות.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>2570</em></li><li><b>תיאומים/מי בא</b><em>530</em></li><li><b>גיימינג/מחשב</b><em>252</em></li><li><b>קללות כחיבה</b><em>240</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>https vm <small>331</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2024-01-06</span>POLL: / איפה דן ביטון ? / OPTION: סטריפ קלאב חיפה (1 vote) / OPTION: קטיף שדה בעוטף עם מישהי מהטינדד (4 votes) / OPTION: בספארי עם שבורה מאשקלון (5 votes) / OPTION: בבית שטיח אחושרמוטה (1 vote)</blockquote><blockquote><span>2025-05-25</span>שמעון מזרחי מאפיה בן זונה / איפה היית אז בלוויה???</blockquote><blockquote><span>2024-10-23</span>POLL: / הראשון שמביא רובוט לבית שלו בתור אבא לילדים / OPTION: דן (1 vote) / OPTION: דורון (7 votes) / OPTION: אורן (0 votes) / OPTION: אופרי (מביא רובוטית זונה) (1 vote) / OPTION: אני (2 votes) / OPTION: בוזי (0 votes)</blockquote>
+    </article>
+
+    <article class="member" id="בוזי נוב">
+      <div class="member-head">
+        <div class="stamp">🍺</div>
+        <div><p class="eyebrow">פרופיל חשוד #7</p><h3>בוזי נוב — הנוב שמופיע בדיוק מספיק כדי לא להסתבך</h3></div>
+        <div class="stat"><strong>17,234</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> עמוד תומך עם אנרגיה של “אני פה, אבל אל תבנו עליי יותר מדי”.</p>
+      <p>בוזי כותב פחות מהשיאנים אבל מספיק כדי שאי אפשר להתעלם ממנו. יש לו נוכחות של אחד שמגיע עם “אולי”, נשאר עם “נראה”, ובסוף איכשהו כולם עדיין אוהבים אותו. נוב? אולי. אבל נוב עם 17 אלף הודעות זה כבר DLC בתשלום.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להישמע כאילו הוא בדרך גם כשהוא כנראה בתוך מציאות אחרת לגמרי.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> יש לו חום חברתי אמיתי, פשוט עטוף בשכבה יפה של חוסר זמינות מבצעית.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>2281</em></li><li><b>תיאומים/מי בא</b><em>636</em></li><li><b>קללות כחיבה</b><em>241</em></li><li><b>גיימינג/מחשב</b><em>241</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>may take <small>73</small></span><span>take while <small>73</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2022-11-01</span>מזל טוב דורון, מה שלומך? / שלחה אותי הדודה שך שאוהבת וזוכרת ת&#x27;יומולדת שלך, ומאחלת את כל הטוב שבעולם בשבילך. דורון הוא איש טוב וזה ידוע, ודודה תהיה פה בעוד שבוע. / בעוד שבוע הדודה תהיה פה? האמת היא פה עוד חמש דקות אבל זה לא התחרז לי עם ידוע.</blockquote><blockquote><span>2022-12-14</span>POLL: / מתי אווטר / OPTION: שישי ערב (2 votes) / OPTION: שבת צהריים (1 vote) / OPTION: שבת ערב (1 vote)</blockquote><blockquote><span>2021-06-27</span>אני כרגע סוגר אבל יש סיכוי שנצא אם המפקד יחידה שלי לא בן זונה</blockquote>
+    </article>
+
+    <article class="member" id="Itay Levy">
+      <div class="member-head">
+        <div class="stamp">🎯</div>
+        <div><p class="eyebrow">פרופיל חשוד #8</p><h3>Itay Levy — האיש שבא לטיילר בשישי, לפחות סטטיסטית</h3></div>
+        <div class="stat"><strong>11,350</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> שחקן אמצע חזק: לא הרעש הכי גדול, אבל מספיק מעורב כדי להשאיר טביעות אצבע על כל הזירה.</p>
+      <p>איתי עם 11,350 הודעות נמצא בדיוק במקום המסוכן: מספיק נמוך כדי להגיד “אני לא מהחופרים”, מספיק גבוה כדי שזה יהיה שקר. הביטוי “בא לטיילר בשישי” מופיע אצלו כמו מנטרה דתית של כת שמאמינה בתיאום ולא בגאולה.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להעמיד פנים שהוא צופה מהצד בזמן שהוא בבירור חלק מהכתב האישום.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> יש לו יכולת להיות בתוך העניינים בלי להשתלט על כל החמצן, וזה נדיר בקבוצה הזאת של מטפי כיבוי עם מקלדת.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>1611</em></li><li><b>תיאומים/מי בא</b><em>537</em></li><li><b>קללות כחיבה</b><em>218</em></li><li><b>גיימינג/מחשב</b><em>131</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>בא לטיילר <small>84</small></span><span>לטיילר בשישי <small>84</small></span><span>בא לטיילר בשישי <small>84</small></span><span>יא זין <small>53</small></span><span>בן זונה <small>45</small></span><span>מישהו רוצה <small>38</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2026-01-23</span>וואלה זה שבור זה הימור עד 31 ביולי, אם אף אחד מהם לא קורה עד אז זה פשוט מתבטל</blockquote><blockquote><span>2021-05-19</span>למה ככה יא בן זונה</blockquote><blockquote><span>2021-07-20</span>חברה לא יודע אם אתם מודעים אבל השנה החגים יוצאים בן זונה</blockquote>
+    </article>
+
+    <article class="member" id="ברשץ">
+      <div class="member-head">
+        <div class="stamp">🎈</div>
+        <div><p class="eyebrow">פרופיל חשוד #9</p><h3>ברשץ — החייל המסכן עם הביט והבלונים</h3></div>
+        <div class="stat"><strong>9,307</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> דמות משנה עם הברקות, בקשות ביט, ונוכחות שמופיעה כשצריך להוסיף עוד שכבת אבסורד.</p>
+      <p>ברשץ הוא מסוג האנשים שיכולים לכתוב “שלחו לי 30 בביט למה זה עלה לי 200 שקל ואני חייל מסכן בלי כסף” וזה נשמע גם עצוב, גם מצחיק, וגם כמו חשבונית של חברות ישראלית. הוא לא הכי רועש, אבל כשהוא נכנס — יש קבלה.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להפוך כל סיפור קטן להוצאה מוכרת בביט.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> הוא מביא אותנטיות. כלומר, הוא לא מנסה להיות מצחיק — החיים פשוט עושים לו סטנדאפ.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>1196</em></li><li><b>תיאומים/מי בא</b><em>310</em></li><li><b>אהבה מוגזמת</b><em>112</em></li><li><b>קללות כחיבה</b><em>81</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>https vm <small>49</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2020-09-18</span>מי שעה בלונים אתמול תעשו טובה שלחו לי 30 בביט למה זה עלה לי 200 שקל ואני חייל מסכן בלי כסף</blockquote><blockquote><span>2020-06-18</span>אני אחרי זה לא אלך עם 100 שקל של מישהו להביא עוד אוכל כמו בן זונה</blockquote><blockquote><span>2021-04-08</span>אתה יא סוטה אני בן זונה אם לא עשית 5 פעמים לפחות</blockquote>
+    </article>
+
+    <article class="member" id="אורן האח">
+      <div class="member-head">
+        <div class="stamp">🎮</div>
+        <div><p class="eyebrow">פרופיל חשוד #10</p><h3>אורן האח — האח, הדיסקורד, והקריאה הנצחית “מתי קונטר?”</h3></div>
+        <div class="stat"><strong>8,662</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> איש חיבור. מביא אנרגיית אח, משחקים, ותזכורת שהחבורה הזאת תמיד במרחק הודעה אחת משרת דיסקורד.</p>
+      <p>אורן הוא “האח” כי כנראה מישהו היה חייב לתת לקבוצה הזאת רמז מילולי שיש פה חיבה. הוא לא צריך 40 אלף הודעות — מספיק לו להופיע עם “מתי קונטר???” וכבר ברור שהערב איבד כיוון.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להכניס גיימינג לכל פתח חברתי שנשאר פתוח.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> הוא מהאנשים שמחזיקים אווירה בלי להיראות כאילו הם מנהלים אותה.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>1191</em></li><li><b>תיאומים/מי בא</b><em>426</em></li><li><b>קללות כחיבה</b><em>108</em></li><li><b>גיימינג/מחשב</b><em>98</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>בואו לדיס <small>24</small></span><span>may take <small>21</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2021-06-20</span>למה היית חייב להוסיף את הבת זונה אחרי</blockquote><blockquote><span>2023-04-05</span>מתי קונטר???</blockquote><blockquote><span>2022-11-04</span>מתי לבוא כוסאומו ערס</blockquote>
+    </article>
+
+    <article class="member" id="בכורי">
+      <div class="member-head">
+        <div class="stamp">🧨</div>
+        <div><p class="eyebrow">פרופיל חשוד #11</p><h3>בכורי — הניצוץ הקטן שעדיין יודע להגיד משהו דפוק בזמן</h3></div>
+        <div class="stat"><strong>5,933</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> פחות נפח, יותר פגיעות נקודתיות. נכנס, זורק, נעלם, משאיר סימן.</p>
+      <p>בכורי עם 5,933 הודעות הוא לא מהחופרים, הוא מהאנשים שמחזיקים סכין קטנה בכיס. לא תמיד שם, אבל כשהוא כותב “אני קצת מתחרבן” או “מאשר לכם לרצוח אותו” — אתה מבין שהשקט היה רק טעינה.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להגיע מעט יחסית ועדיין להצליח להיות חשוד.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> יש לו טיימינג. לא תמיד מוסרי, אבל טיימינג.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>684</em></li><li><b>תיאומים/מי בא</b><em>129</em></li><li><b>קללות כחיבה</b><em>80</em></li><li><b>אהבה מוגזמת</b><em>49</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>was deleted <small>26</small></span><span>בן זונה <small>16</small></span><span>וואי וואי <small>13</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2021-06-20</span>מוחמד בן זונה איך לא זרק לי איזה גימל</blockquote><blockquote><span>2022-10-20</span>איך לו שמו לו 2 בראש לבן זונה</blockquote><blockquote><span>2023-07-09</span>איפה אתה יבן זונה</blockquote>
+    </article>
+
+    <article class="member" id="פרנסיסקו">
+      <div class="member-head">
+        <div class="stamp">🌎</div>
+        <div><p class="eyebrow">פרופיל חשוד #12</p><h3>פרנסיסקו — הדיפלומט האוהב עם ה־no car</h3></div>
+        <div class="stat"><strong>4,683</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> החבר החם, המברך, והאדם שמצליח להישמע טוב לב גם כשהוא שם זין.</p>
+      <p>פרנסיסקו התחיל חזק עם “אני אבל no car”, שזה בעצם הצהרת העצמאות של כל מי שרוצה לבוא אבל לא רוצה לשאת באחריות לוגיסטית. יש אצלו הרבה “אוהב אותך”, שזה יפה — בקבוצה הזאת זה כמעט חשוד.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להכניס אנושיות למקום שבו כולם מנסים לדבר רק בקללות ותיאומים.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> הוא כנראה אחד האנשים היותר נעימים פה, וזה לבד הופך אותו למיעוט נרדף.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>667</em></li><li><b>תיאומים/מי בא</b><em>235</em></li><li><b>אהבה מוגזמת</b><em>135</em></li><li><b>קללות כחיבה</b><em>49</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>אוהב אותך <small>22</small></span><span>may take <small>21</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2023-08-03</span>כן למה שמתי זין עליו בכלל</blockquote><blockquote><span>2023-06-07</span>כזום המתכנת פול סטאק תותח שלנו! / מלא מזל טוב יאח למסך❤️❤️🎉🎉🎉 / מאחל לך שלא יהיו לך באגים כמעט בכלל, ושתמצא עבודה בת זונה עם משכורת שמנהה!</blockquote><blockquote><span>2021-08-12</span>אנחנו רוצים ללכת לשלומפר, צריך להבין מתי יוצאים ואיך</blockquote>
+    </article>
+
+    <article class="member" id="אדיר פרושונסקי">
+      <div class="member-head">
+        <div class="stamp">🪖</div>
+        <div><p class="eyebrow">פרופיל חשוד #13</p><h3>אדיר פרושונסקי — הקפסולה הצבאית שנכנסת פעם ב־ ומזכירה שיש עולם אמיתי</h3></div>
+        <div class="stat"><strong>2,125</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> נוכחות קטנה יותר, עם הודעות שנעות בין “רוצים לעשות משהו?” לבין תדריך צבאי מלא.</p>
+      <p>אדיר הוא זה שיכול לשאול “רוצים לעשות משהו? או שכולם מתים?” ואז לשלוח הודעה שנראית כמו פקודת מבצע על טקס, רס״ר ומג״ד. אחי, אנחנו בוואטסאפ, לא במפקדה קדמית.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להזכיר לחבורה שיש השלכות בעולם החיצון.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> הוא מביא תחושת מציאות לקבוצה, גם אם המציאות הזאת מגיעה עם נעליים צבאיות ובירוקרטיה.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>271</em></li><li><b>קללות כחיבה</b><em>61</em></li><li><b>תיאומים/מי בא</b><em>61</em></li><li><b>אהבה מוגזמת</b><em>30</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>בן זונה <small>15</small></span><span>https vm <small>13</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2021-09-16</span>ותמיד יש איזה בן זונה ששם זין</blockquote><blockquote><span>2021-04-29</span>רוצים לעשות משהו? / או שכולם מתים?</blockquote><blockquote><span>2020-09-30</span>*שימו לב!* / הטקס מתקיים במשמר הנגב, בין כל צוות יהיו רווחים . / בנוסף- אין ערבוב או מגע עם המכים, *הרסר והמגד לא ימנעו מלשפוט חייל שיגע במכים.* / / בטקס המכים עומדים בקפסולה שלהם כמו צוות חמישי.</blockquote>
+    </article>
+
+    <article class="member" id="מאור אחשלי">
+      <div class="member-head">
+        <div class="stamp">👻</div>
+        <div><p class="eyebrow">פרופיל חשוד #14</p><h3>מאור אחשלי — האורח הנדיר שמקבל יחס של אגדה אורבנית</h3></div>
+        <div class="stat"><strong>668</strong><span>הודעות</span></div>
+      </div>
+      <p class="role"><b>התפקיד במערכת:</b> כמות הודעות נמוכה, ערך מיתולוגי גבוה. פחות משתמש, יותר הופעת קמאו.</p>
+      <p>מאור עם 668 הודעות ליד דורון זה לא חבר בקבוצה, זה Easter egg. ועדיין יש עליו פול “נעדר כבר שעה מתי להתחיל לחפש אותו”, כלומר הוא הצליח להפוך היעדרות לאישיות.</p>
+      <p class="crime"><b>הפשע החוזר:</b> להיות פחות פעיל ועדיין לגרום לאנשים לדבר עליו.</p>
+      <p class="compliment"><b>מחמאה שמתחבאת בתוך ירידה:</b> יש אנשים שצריכים אלפי הודעות כדי להשפיע. מאור פשוט לא עונה וזה כבר אירוע.</p>
+      <div class="member-grid">
+        <div><h4>דפוסים שנתפסו</h4><ul class="topics"><li><b>אוכל/יציאות</b><em>95</em></li><li><b>תיאומים/מי בא</b><em>22</em></li><li><b>גיימינג/מחשב</b><em>12</em></li><li><b>גוף/שירותים/מחלה</b><em>7</em></li></ul></div>
+        <div><h4>ביטויים / סימני עשן</h4><div class="chips"><span>מטורף מטורף <small>3</small></span></div></div>
+      </div>
+      <h4>קבלות מהזירה</h4><blockquote><span>2026-03-09</span>שאל אותו מתי הוא מסדר לי תראסטות</blockquote><blockquote><span>2025-12-11</span>קמתי מהבומים רצתי לממד</blockquote><blockquote><span>2026-06-14</span>וגרמתי לו ללכת</blockquote>
+    </article></div></section>
+<section><div class="wrap"><div class="section-title"><h2>סיכום פתולוגי</h2></div><div class="panel"><p class="pull">רלוונטיים 2026 היא קבוצה של אנשים שאומרים “מי בא?” כאילו זאת שאלה, אבל בפועל זאת קריאת מצוקה.</p><p>היופי הוא שכל אחד פה ממלא תפקיד: דורון מחזיק את המערכת, אופרי מחזיק את הרעש, דן מחזיק את המיתולוגיה, ניצן מחזיק את הסקרים, שחר מחזיק יותר מדי מידע, כזום מחזיק מילון קללות, וכל השאר מחזיקים את זה שלא יתפרק לגמרי.</p><p>זה מטומטם, גס, רועש, לא יעיל — ולכן זה עובד. אל תשנו כלום. רק אולי תענו לפול בזמן, יא בני זונות.</p></div></div></section>
+</main><footer class="footer"><div class="wrap">נוצר מתוך ייצוא וואטסאפ שסופק מקומית. הדוח כולל ציטוטים נבחרים וסטטיסטיקות, לא את קובץ הצ׳אט המלא. גרסה ראשונה — אפשר להמשיך לחדד בדיחות פנימיות ולור.</div></footer>
+</body></html>
